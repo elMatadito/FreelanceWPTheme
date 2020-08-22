@@ -1,8 +1,8 @@
 /*!
-Theme Name: _ks
-Theme URI: https://underscores.me/
-Author: Automattic
-Author URI: https://automattic.com/
+Theme Name: KualliSoft
+Theme URI: https://kuallisoft.com/
+Author: KualliSoft
+Author URI: https://kuallisoft.com/
 Description: Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 Version: 1.0.0
 Tested up to: 5.4
@@ -33,7 +33,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Elements
 	- Links
 	- Forms
-## Layouts
 # Components
 	- Navigation
 	- Posts and pages
@@ -41,7 +40,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Widgets
 	- Media
 	- Captions
-	- Galleries
+  - Galleries
+## Layouts
 # plugins
 	- Jetpack infinite scroll
 # Utilities
@@ -71,15 +71,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "base/base";
 
 /*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "components/components";
+
+/*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
 // @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
 // @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
-
-/*--------------------------------------------------------------
-# Components
---------------------------------------------------------------*/
-@import "components/components";
+@import "layouts/kuallisoft"; // Uncomment this line for a sidebar on left side of your content.
 
 /*--------------------------------------------------------------
 # Plugins

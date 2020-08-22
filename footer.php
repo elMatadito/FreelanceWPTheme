@@ -13,17 +13,10 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', '_ks' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', '_ks' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', '_ks' ), '_ks', '<a href="https://automattic.com/">Automattic</a>' );
-				?>
+      <span>&copy; <?php echo bloginfo( 'name' ); ?> <?php echo date("Y"); ?></span>
+      <a href="<?php echo esc_url( __( 'https://kuallisoft.com', '_ks' ) ); ?>" target="_blank">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/kuallisoft_logo.png" alt="Powered by KualliSoft" />
+      </a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

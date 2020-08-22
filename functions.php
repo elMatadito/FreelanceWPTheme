@@ -50,7 +50,7 @@ if ( ! function_exists( '_ks_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', '_ks' ),
+				'top-menu' => esc_html__( 'Primary', '_ks' ),
 			)
 		);
 
