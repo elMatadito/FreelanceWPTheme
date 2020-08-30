@@ -7,13 +7,16 @@
  * @package _ks
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-	return;
-}
 ?>
 
-<aside id="secondary" class="widget-area">
+<aside class="widget-area">
   <div class="container">
-	  <?php dynamic_sidebar( 'sidebar-1' ); ?>
+    <div class="row">
+      <section class="col-sm-12 col-md-3">
+        <?php the_custom_logo(); ?>
+        <p><?php bloginfo('description'); ?></p>
+      </section>
+      <?php dynamic_sidebar( 'sidebar-1' ); ?>
+    </div>
   </div>
 </aside><!-- #secondary -->

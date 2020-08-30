@@ -1,0 +1,40 @@
+aside.widget-area {
+  background-color: #c39a6b;
+  padding: 10px 0px;
+  color: #ffffff;
+
+  .widget-title {
+    color: #5b300f;
+  }
+
+  a {
+    color: #5b300f;
+    text-decoration: underline;
+  }
+
+  img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 0px;
+
+  .powered {
+    text-align: right;
+    img {
+      height: 30px;
+    }
+  }
+
+  @media (max-width: map-get($grid-breakpoints, sm)) {
+    text-align: center;
+
+    .powered {
+      text-align: center;
+    }
+  }
+}

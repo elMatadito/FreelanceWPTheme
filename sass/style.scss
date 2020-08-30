@@ -3,7 +3,7 @@ Theme Name: KualliSoft
 Theme URI: https://kuallisoft.com/
 Author: KualliSoft
 Author URI: https://kuallisoft.com/
-Description: Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Description: Theme open source oriented to small business. 
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.6
@@ -18,86 +18,53 @@ Use it to make something cool, have fun, and share what you've learned.
 _s is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
-*/
+ * Bootstrap v4.5.2 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Generic
-	- Normalize
-	- Box sizing
-# Base
-	- Typography
-	- Elements
-	- Links
-	- Forms
-# Components
-	- Navigation
-	- Posts and pages
-	- Comments
-	- Widgets
-	- Media
-	- Captions
-  - Galleries
-## Layouts
-# plugins
-	- Jetpack infinite scroll
-# Utilities
-	- Accessibility
-	- Alignments
-
---------------------------------------------------------------*/
-
-// Import variables and mixins.
-@import "abstracts/abstracts";
-
-/*--------------------------------------------------------------
-# Generic
---------------------------------------------------------------*/
-
-/* Normalize
---------------------------------------------- */
-@import "generic/normalize";
-
-/* Box sizing
---------------------------------------------- */
-@import "generic/box-sizing";
-
-/*--------------------------------------------------------------
-# Base
---------------------------------------------------------------*/
-@import "base/base";
-
-/*--------------------------------------------------------------
-# Components
---------------------------------------------------------------*/
-@import "components/components";
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
 
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
 // @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
 // @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
-@import "layouts/kuallisoft"; // Uncomment this line for a sidebar on left side of your content.
-
-/*--------------------------------------------------------------
-# Plugins
---------------------------------------------------------------*/
-
-/* Jetpack infinite scroll
---------------------------------------------- */
-@import "plugins/jetpack/infinite-scroll";
-
-/*--------------------------------------------------------------
-# Utilities
---------------------------------------------------------------*/
-
-/* Accessibility
---------------------------------------------- */
-@import "utilities/accessibility";
-
-/* Alignments
---------------------------------------------- */
-@import "utilities/alignments";
+@import "./layouts/default/index"; // Uncomment this line for a sidebar on left side of your content.

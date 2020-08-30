@@ -105,6 +105,14 @@ endif;
 add_action( 'after_setup_theme', '_ks_setup' );
 
 /**
+ * Register Custom Navigation Walker
+ */
+function register_navwalker(){
+	require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
+
+/**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * Priority 0 to make it available to lower priority callbacks.
@@ -127,7 +135,7 @@ function _ks_widgets_init() {
 			'name'          => esc_html__( 'Sidebar', '_ks' ),
 			'id'            => 'sidebar-1',
 			'description'   => esc_html__( 'Add widgets here.', '_ks' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'before_widget' => '<section id="%1$s" class="col-sm-12 col-md-3 widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>',
@@ -143,8 +151,8 @@ function _ks_scripts() {
 	wp_enqueue_style( '_ks-style', get_stylesheet_uri(), array(), _ks_VERSION );
 	wp_style_add_data( '_ks-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( '_ks-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _ks_VERSION, true );
-
+	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery.js', array(), _ks_VERSION, true );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), _ks_VERSION, true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

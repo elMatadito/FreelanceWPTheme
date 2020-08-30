@@ -1,0 +1,18 @@
+body {
+  padding-top: 70px;
+}
+
+.wp-block-group {
+  margin: 10px 0px;
+  .wp-block-group__inner-container {
+    @extend .container;
+  }
+}
+
+.wp-block-cover__inner-container {
+  @extend .container;
+}
+
+article.content-page {
+  padding-top: 30px;
+}
